@@ -7,7 +7,7 @@ LOPS = $(LIBS)
 SRC = ./src
 DEST = ./target
 OBJS = $(shell find ./src -name '*.c' | tr '\n' ' ' | sed -e 's/\.\/src/\.\/target/g' -e 's/\.*c/\.o/g')
-EXEC = ./main
+EXEC = ./fillmem
 
 .PHONY: all build rebuild clean format
 
